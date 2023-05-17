@@ -1,7 +1,7 @@
 {
   "name": "@gjfleo/eslint-config-react",
   "private": true,
-  "version": "0.0.1-beta.4",
+  "version": "0.0.1-beta.5",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
   "license": "MIT",
