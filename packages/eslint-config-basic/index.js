@@ -48,7 +48,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'antfu',
+    'gjfleo',
     'no-only-tests',
     'unused-imports',
   ],
@@ -374,9 +374,9 @@ module.exports = {
     'yml/no-empty-document': 'off',
 
     // antfu
-    'antfu/if-newline': 'error',
-    'antfu/import-dedupe': 'error',
-    'antfu/top-level-function': 'error',
-    // 'antfu/prefer-inline-type-import': 'error',
+    'gjfleo/if-newline': 'error',
+    'gjfleo/import-dedupe': 'error',
+    'gjfleo/top-level-function': 'error',
+    // 'gjfleo/prefer-inline-type-import': 'error',
   },
 }
