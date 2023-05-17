@@ -1,10 +1,10 @@
 {
-  "name": "@antfu/eslint-config-ts",
-  "version": "0.38.6",
+  "name": "@gjfleo/eslint-config-ts",
+  "version": "0.0.1-beta.0",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/gjfleo/)",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/gjfleo/eslint-config",
   "keywords": [
     "eslint-config"
   ],
@@ -17,12 +17,16 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "workspace:*",
+    "@gjfleo/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "eslint-plugin-jest": "^27.2.1"
   },
   "devDependencies": {
     "eslint": "^8.38.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

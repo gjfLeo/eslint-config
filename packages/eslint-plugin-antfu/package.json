@@ -1,8 +1,8 @@
 {
-  "name": "eslint-plugin-antfu",
-  "version": "0.38.6",
+  "name": "eslint-plugin-gjfleo",
+  "version": "0.0.1-beta.0",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/gjfleo/eslint-config",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -22,5 +22,9 @@
     "@types/node": "^18.15.11",
     "unbuild": "^1.2.1",
     "vitest": "^0.30.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
