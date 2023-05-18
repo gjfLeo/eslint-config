@@ -147,6 +147,7 @@ module.exports = {
             ],
           },
         ],
+        "jsonc/comma-dangle": ["error", "never"],
       },
     },
     {
