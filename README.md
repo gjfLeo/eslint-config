@@ -51,11 +51,11 @@ Type aware rules are enabled when a `tsconfig.eslint.json` is found in the proje
 
 ```js
 // .eslintrc.js
-process.env.ESLINT_TSCONFIG = 'tsconfig.json'
+process.env.ESLINT_TSCONFIG = "tsconfig.json";
 
 module.exports = {
-  extends: '@gjfleo'
-}
+  extends: "@gjfleo"
+};
 ```
 
 ### Lint Staged
