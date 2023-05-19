@@ -218,7 +218,7 @@ module.exports = {
     // Common
     "semi": ["error", "never"],
     "curly": ["error", "multi-or-nest", "consistent"],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
     "quote-props": ["error", "consistent-as-needed"],
 
     "unused-imports/no-unused-imports": "error",
