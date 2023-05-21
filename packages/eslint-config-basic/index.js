@@ -63,7 +63,7 @@ module.exports = {
       parser: "jsonc-eslint-parser",
       rules: {
         "jsonc/array-bracket-spacing": ["error", "never"],
-        "jsonc/comma-dangle": ["error", "always-multiline"],
+        "jsonc/comma-dangle": ["error", "never"],
         "jsonc/comma-style": ["error", "last"],
         "jsonc/indent": ["error", 2],
         "jsonc/key-spacing": ["error", { beforeColon: false, afterColon: true }],
@@ -147,7 +147,13 @@ module.exports = {
             ],
           },
         ],
-        "jsonc/comma-dangle": ["error", "never"],
+      },
+    },
+    {
+      files: [".vscode/*.json"],
+      parser: "jsonc-eslint-parser",
+      rules: {
+        "jsonc/comma-dangle": ["error", "always-multiline"],
       },
     },
     {
