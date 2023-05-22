@@ -223,7 +223,7 @@ module.exports = {
 
     // Common
     "semi": ["warn", "never"],
-    "curly": ["warn", "multiline", "consistent"],
+    "curly": ["warn", "multi-line", "consistent"],
     "quotes": ["warn", "double"],
     "quote-props": ["warn", "consistent-as-needed"],
 
