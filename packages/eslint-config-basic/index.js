@@ -222,10 +222,10 @@ module.exports = {
     "import/newline-after-import": ["error", { count: 1, considerComments: true }],
 
     // Common
-    "semi": ["error", "never"],
-    "curly": ["error", "multi-or-nest", "consistent"],
-    "quotes": ["error", "double"],
-    "quote-props": ["error", "consistent-as-needed"],
+    "semi": ["warn", "never"],
+    "curly": ["warn", "multiline", "consistent"],
+    "quotes": ["warn", "double"],
+    "quote-props": ["warn", "consistent-as-needed"],
 
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
