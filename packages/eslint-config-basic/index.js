@@ -381,7 +381,7 @@ module.exports = {
     "yml/no-empty-document": "off",
 
     // antfu
-    "gjfleo/if-newline": "error",
+    "gjfleo/if-newline": "off",
     "gjfleo/import-dedupe": "error",
     "gjfleo/top-level-function": "error",
     // 'gjfleo/prefer-inline-type-import': 'error',
