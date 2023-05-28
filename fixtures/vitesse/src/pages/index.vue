@@ -1,16 +1,3 @@
-<script setup lang="ts">
-const user = useUserStore();
-const name = $ref(user.savedName);
-
-const router = useRouter();
-function go() {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`);
-}
-
-const { t } = useI18n();
-</script>
-
 <template>
   <div>
     <div text-4xl>
@@ -55,6 +42,20 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const user = useUserStore();
+const name = $ref(user.savedName);
+
+const router = useRouter();
+function go() {
+  if (name) {
+    router.push(`/hi/${encodeURIComponent(name)}`);
+  }
+}
+
+const { t } = useI18n();
+</script>
 
 <route lang="yaml">
 meta:

@@ -1,13 +1,3 @@
-<script setup lang="ts">
-const { t, availableLocales, locale } = useI18n();
-
-function toggleLocales() {
-  // change to some real logic
-  const locales = availableLocales;
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
-}
-</script>
-
 <template>
   <nav text-xl mt-6>
     <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
@@ -31,3 +21,13 @@ function toggleLocales() {
     </a>
   </nav>
 </template>
+
+<script setup lang="ts">
+const { t, availableLocales, locale } = useI18n();
+
+function toggleLocales() {
+  // change to some real logic
+  const locales = availableLocales;
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
+}
+</script>

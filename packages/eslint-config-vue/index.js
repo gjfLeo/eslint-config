@@ -2,8 +2,9 @@ const { isPackageExists } = require("local-pkg");
 
 const TS = isPackageExists("typescript");
 
-if (!TS)
+if (!TS) {
   console.warn("[@gjfleo/eslint-config] TypeScript is not installed, fallback to JS only.");
+}
 
 module.exports = {
   overrides: [
