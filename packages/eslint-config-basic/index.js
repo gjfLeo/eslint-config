@@ -316,7 +316,7 @@ module.exports = {
     "eqeqeq": ["error", "smart"],
     "no-alert": "warn",
     "no-case-declarations": "error",
-    "no-multi-spaces": "error",
+    "no-multi-spaces": "warn",
     "no-multi-str": "error",
     "no-with": "error",
     "no-void": "error",
