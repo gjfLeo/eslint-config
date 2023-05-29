@@ -62,7 +62,7 @@ module.exports = {
       files: ["*.json", "*.json5"],
       parser: "jsonc-eslint-parser",
       rules: {
-        "jsonc/array-bracket-spacing": ["error", "never"],
+        "jsonc/array-bracket-spacing": ["warn", "never"],
         "jsonc/comma-dangle": ["error", "never"],
         "jsonc/comma-style": ["error", "last"],
         "jsonc/indent": ["error", 2],
@@ -234,7 +234,7 @@ module.exports = {
     ],
 
     "no-param-reassign": "off",
-    "array-bracket-spacing": ["error", "never"],
+    "array-bracket-spacing": ["warn", "never"],
     "brace-style": ["error", "stroustrup", { allowSingleLine: true }],
     "block-spacing": ["error", "always"],
     "camelcase": "off",
