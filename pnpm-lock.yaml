@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 importers:
 
@@ -74,12 +78,12 @@ importers:
 
   packages/eslint-config-basic:
     dependencies:
-      eslint-plugin-gjfleo:
-        specifier: workspace:*
-        version: link:../eslint-plugin-gjfleo
       eslint-plugin-eslint-comments:
         specifier: ^3.2.0
         version: 3.2.0(eslint@8.38.0)
+      eslint-plugin-gjfleo:
+        specifier: workspace:*
+        version: link:../eslint-plugin-gjfleo
       eslint-plugin-html:
         specifier: ^7.1.0
         version: 7.1.0
