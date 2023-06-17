@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-gjfleo",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "license": "MIT",
   "homepage": "https://github.com/gjfleo/eslint-config",
   "main": "./dist/index.cjs",
