@@ -28,7 +28,7 @@
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
-    >
+    />
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
 
     <div>
