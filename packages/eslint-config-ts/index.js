@@ -125,7 +125,7 @@ module.exports = {
     "comma-dangle": "off",
     "@typescript-eslint/comma-dangle": ["warn", "always-multiline"],
     "object-curly-spacing": "off",
-    "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "@typescript-eslint/object-curly-spacing": ["warn", "always"],
     "semi": "off",
     "@typescript-eslint/semi": ["warn", "always"],
     "quotes": "off",
