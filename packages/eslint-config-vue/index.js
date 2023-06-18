@@ -108,7 +108,7 @@ module.exports = {
     "vue/space-unary-ops": ["error", { words: true, nonwords: false }],
     "vue/template-curly-spacing": "error",
 
-    "vue/html-self-closing": ["error", {
+    "vue/html-self-closing": ["warn", {
       html: {
         void: "always",
         normal: "always",
