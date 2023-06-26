@@ -66,7 +66,7 @@ module.exports = {
         "jsonc/comma-dangle": ["error", "never"],
         "jsonc/comma-style": ["error", "last"],
         "jsonc/indent": ["warn", 2],
-        "jsonc/key-spacing": ["error", { beforeColon: false, afterColon: true }],
+        "jsonc/key-spacing": ["warn", { beforeColon: false, afterColon: true }],
         "jsonc/no-octal-escape": "error",
         "jsonc/object-curly-newline": ["error", { multiline: true, consistent: true }],
         "jsonc/object-curly-spacing": ["error", "always"],
@@ -246,7 +246,7 @@ module.exports = {
     "no-console": ["error", { allow: ["warn", "error"] }],
     "no-cond-assign": ["error", "always"],
     "func-call-spacing": ["off", "never"],
-    "key-spacing": ["error", { beforeColon: false, afterColon: true }],
+    "key-spacing": ["warn", { beforeColon: false, afterColon: true }],
     "indent": ["warn", 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
     "no-restricted-syntax": [
       "error",
