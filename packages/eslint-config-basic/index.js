@@ -59,7 +59,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.json", "*.json5"],
+      files: ["*.json", "*.json5", "*.jsonc"],
       parser: "jsonc-eslint-parser",
       rules: {
         "jsonc/array-bracket-spacing": ["warn", "never"],
@@ -209,6 +209,8 @@ module.exports = {
         "no-undef": "off",
         "no-unused-expressions": "off",
         "no-unused-vars": "off",
+        'antfu/no-cjs-exports': 'off',
+        'antfu/no-ts-export-equal': 'off',
       },
     },
   ],
@@ -263,6 +265,19 @@ module.exports = {
         named: "never",
         asyncArrow: "always",
       },
+    ],
+    'no-restricted-globals': [
+      'error',
+      { name: 'global', message: 'Use `globalThis` instead.' },
+      { name: 'self', message: 'Use `globalThis` instead.' },
+    ],
+    'no-restricted-properties': [
+      'error',
+      { property: '__proto__', message: 'Use `Object.getPrototypeOf` or `Object.setPrototypeOf` instead.' },
+      { property: '__defineGetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__defineSetter__', message: 'Use `Object.defineProperty` instead.' },
+      { property: '__lookupGetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
+      { property: '__lookupSetter__', message: 'Use `Object.getOwnPropertyDescriptor` instead.' },
     ],
 
     // es6
@@ -358,6 +373,8 @@ module.exports = {
     "unicorn/throw-new-error": "error",
     // Prefer using the node: protocol
     "unicorn/prefer-node-protocol": "error",
+    // Prefer using number properties like `Number.isNaN` rather than `isNaN`
+    'unicorn/prefer-number-properties': 'error',
 
     "no-use-before-define": ["error", { functions: false, classes: false, variables: true }],
     "eslint-comments/disable-enable-pair": "off",
