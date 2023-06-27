@@ -72,7 +72,6 @@ module.exports = {
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/prefer-ts-expect-error": "error",
     "@typescript-eslint/no-require-imports": "error",
-
     // Override JS
     "no-useless-constructor": "off",
     "indent": "off",
@@ -158,6 +157,8 @@ module.exports = {
 
     // antfu
     "gjfleo/generic-spacing": "error",
+    "gjfleo/no-cjs-exports": "error",
+    "gjfleo/no-ts-export-equal": "error",
 
     // off
     "@typescript-eslint/consistent-indexed-object-style": "off",
