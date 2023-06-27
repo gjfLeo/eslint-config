@@ -157,8 +157,8 @@ module.exports = {
 
     // antfu
     "gjfleo/generic-spacing": "error",
-    'antfu/no-cjs-exports': 'error',
-    'antfu/no-ts-export-equal': 'error',
+    "gjfleo/no-cjs-exports": "error",
+    "gjfleo/no-ts-export-equal": "error",
 
     // off
     "@typescript-eslint/consistent-indexed-object-style": "off",
