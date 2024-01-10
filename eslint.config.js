@@ -1,15 +1,4 @@
 // @ts-check
-import antfu from '@antfu/eslint-config'
+import gjfleo from "@gjfleo/eslint-config";
 
-export default antfu(
-  {
-    ignores: [
-      // eslint ignore globs here
-    ],
-  },
-  {
-    rules: {
-      // overrides
-    },
-  },
-)
+export default gjfleo();
