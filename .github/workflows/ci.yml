@@ -26,6 +26,9 @@ jobs:
       - name: Setup
         run: npm i -g @antfu/ni
 
+      - name: Build
+        run: pnpm build
+
       - name: Install
         run: nci
 
