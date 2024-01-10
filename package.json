@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0-beta.1",
   "packageManager": "pnpm@8.14.0",
-  "description": "_description_",
+  "description": "GjfLeo's ESLint config.",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/gjfleo/eslint-config#readme",
