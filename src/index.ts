@@ -1,10 +1,7 @@
 import antfu from "@antfu/eslint-config";
+import { isPackageExists } from "local-pkg";
 
-interface Config {
-  unocss?: boolean;
-}
-
-export default function gjfleo(config?: Config, ...userConfigs: Parameters<typeof antfu>[1][]) {
+export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
   return antfu(
     {
       stylistic: {
@@ -33,7 +30,7 @@ export default function gjfleo(config?: Config, ...userConfigs: Parameters<typeo
         },
       },
 
-      unocss: config?.unocss,
+      unocss: isPackageExists("unocss") || isPackageExists("@unocss/nuxt"),
     },
 
     {
