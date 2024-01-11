@@ -10,6 +10,13 @@ export default function gjfleo(config?: Config, ...userConfigs: Parameters<typeo
       stylistic: {
         quotes: "double",
         semi: true,
+        // @ts-expect-error 等待修复
+        overrides: {
+          "antfu/if-newline": "off",
+          "curly": ["warn", "multi-line", "consistent"],
+          "style/member-delimiter-style": ["error", {}],
+          "style/quotes": ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+        },
       },
 
       typescript: {
@@ -29,14 +36,6 @@ export default function gjfleo(config?: Config, ...userConfigs: Parameters<typeo
       unocss: config?.unocss,
     },
 
-    {
-      rules: {
-        "antfu/if-newline": "off",
-        "curly": ["warn", "multi-line", "consistent"],
-        "style/member-delimiter-style": ["error", {}],
-        "style/quotes": ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
-      },
-    },
     {
       files: [".vscode/*.json"],
       rules: {
