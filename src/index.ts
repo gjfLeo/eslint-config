@@ -7,7 +7,6 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
       stylistic: {
         quotes: "double",
         semi: true,
-        // @ts-expect-error 等待修复
         overrides: {
           "antfu/if-newline": "off",
           "curly": ["warn", "multi-line", "consistent"],
