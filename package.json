@@ -56,7 +56,7 @@
     "@eslint/eslintrc": "^3.0.2",
     "@gjfleo/eslint-config": "workspace:*",
     "@types/eslint__eslintrc": "^2.1.1",
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.11.22",
     "bumpp": "^9.3.0",
     "eslint": "^8.57.0",
     "esno": "^4.0.0",
