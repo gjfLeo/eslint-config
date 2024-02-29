@@ -33,9 +33,9 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
     },
 
     {
-      files: [".vscode/*.json"],
+      files: [".vscode/settings.json", ".vscode/extensions.json"],
       rules: {
-        "jsonc/comma-dangle": ["error", "always-multiline"],
+        "jsonc/comma-dangle": ["warn", "always-multiline"],
       },
     },
 
