@@ -29,7 +29,7 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
         },
       },
 
-      unocss: isPackageExists("unocss") || isPackageExists("@unocss/nuxt"),
+      unocss: isPackageExists("@unocss/eslint-plugin"),
     },
 
     {
