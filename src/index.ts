@@ -15,15 +15,17 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
         },
       },
 
-      typescript: {
+      javascript: {
         overrides: {
-          "node/prefer-global/process": ["error", "always"],
+          "no-console": ["warn", { allow: ["warn", "error"] }],
+          "no-irregular-whitespace": ["warn", { skipStrings: true, skipTemplates: true }],
+          "node/prefer-global/process": ["warn", "always"],
         },
       },
 
       vue: {
         overrides: {
-          "vue/block-order": ["error", {}],
+          "vue/block-order": ["warn", {}],
           "vue/html-self-closing": ["warn", { html: { void: "always", normal: "always", component: "always" }, svg: "always", math: "always" }],
           "vue/singleline-html-element-content-newline": "off",
         },
