@@ -22,6 +22,11 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]) {
           "node/prefer-global/process": ["warn", "always"],
         },
       },
+      typescript: {
+        overrides: {
+          "node/prefer-global/process": ["warn", "always"],
+        },
+      },
 
       vue: {
         overrides: {
