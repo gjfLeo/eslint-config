@@ -30,13 +30,17 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
 
       vue: {
         overrides: {
-          "vue/block-order": ["warn", {}],
+          "vue/block-order": ["warn", { order: ["template", "script", "style"] }],
           "vue/html-self-closing": ["warn", { html: { void: "always", normal: "always", component: "always" }, svg: "always", math: "always" }],
           "vue/singleline-html-element-content-newline": "off",
         },
       },
 
       unocss: isPackageExists("@unocss/eslint-plugin"),
+
+      formatters: {
+        css: true,
+      },
     },
 
     {
