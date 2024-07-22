@@ -38,9 +38,9 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
 
       unocss: isPackageExists("@unocss/eslint-plugin"),
 
-      formatters: {
-        css: true,
-      },
+      // formatters: {
+      //   css: true,
+      // },
     },
 
     {
