@@ -1,7 +1,7 @@
 {
   "name": "@gjfleo/eslint-config",
   "type": "module",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "packageManager": "pnpm@9.6.0",
   "description": "GjfLeo's ESLint config.",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
@@ -60,17 +60,17 @@
     "@eslint/eslintrc": "^3.1.0",
     "@gjfleo/eslint-config": "workspace:*",
     "@types/eslint__eslintrc": "^2.1.2",
-    "@types/node": "^20.16.2",
+    "@types/node": "^20.16.3",
     "bumpp": "^9.5.2",
     "esno": "^4.7.0",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "pnpm": "^9.9.0",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.4",
     "unbuild": "^2.0.0",
     "vite": "^5.4.2",
-    "vitest": "^1.6.0"
+    "vitest": "^2.0.5"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
