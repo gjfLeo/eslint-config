@@ -1,7 +1,7 @@
 {
   "name": "@gjfleo/eslint-config",
   "type": "module",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "packageManager": "pnpm@9.6.0",
   "description": "GjfLeo's ESLint config.",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
