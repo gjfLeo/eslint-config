@@ -1,7 +1,7 @@
 import antfu from "@antfu/eslint-config";
 import { isPackageExists } from "local-pkg";
 
-export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
+export default function gjfleo(options: Parameters<typeof antfu>[0], ...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
   return antfu(
     {
       stylistic: {
@@ -43,6 +43,8 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
         html: true,
         markdown: true,
       },
+
+      ...(options ?? {}),
     },
 
     {
