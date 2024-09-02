@@ -1,7 +1,7 @@
 import antfu from "@antfu/eslint-config";
 import { isPackageExists } from "local-pkg";
 
-export default function gjfleo(options: Parameters<typeof antfu>[0], ...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
+export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
   return antfu(
     {
       stylistic: {
@@ -25,6 +25,7 @@ export default function gjfleo(options: Parameters<typeof antfu>[0], ...userConf
       typescript: {
         overrides: {
           "node/prefer-global/process": ["warn", "always"],
+          "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
         },
       },
 
@@ -43,8 +44,6 @@ export default function gjfleo(options: Parameters<typeof antfu>[0], ...userConf
         html: true,
         markdown: true,
       },
-
-      ...(options ?? {}),
     },
 
     {
