@@ -20,6 +20,7 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
           "no-console": ["warn", { allow: ["warn", "error"] }],
           "no-irregular-whitespace": ["warn", { skipStrings: true, skipTemplates: true }],
           "node/prefer-global/process": ["warn", "always"],
+          "antfu/no-top-level-await": "off",
         },
       },
       typescript: {
