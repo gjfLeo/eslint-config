@@ -26,7 +26,6 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
       typescript: {
         overrides: {
           "node/prefer-global/process": ["warn", "always"],
-          "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
         },
       },
 
@@ -38,6 +37,7 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
         },
       },
 
+      react: isPackageExists("react"),
       unocss: isPackageExists("@unocss/eslint-plugin"),
 
       formatters: {
