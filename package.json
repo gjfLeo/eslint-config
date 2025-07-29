@@ -37,9 +37,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": ">=4.14.0",
+    "@antfu/eslint-config": ">=5.0.0",
     "eslint": ">=9.5.0",
-    "eslint-plugin-format": ">=0.1.0"
+    "eslint-plugin-format": ">=1.0.0"
   },
   "dependencies": {
     "local-pkg": "^1.1.1"
@@ -49,14 +49,14 @@
     "@antfu/utils": "^9.2.0",
     "@eslint/eslintrc": "^3.3.1",
     "@gjfleo/eslint-config": "workspace:*",
-    "@types/node": "^20.17.47",
-    "bumpp": "^10.1.1",
+    "@types/node": "^20.19.9",
+    "bumpp": "^10.2.0",
     "esno": "^4.8.0",
-    "pnpm": "^10.12.1",
+    "pnpm": "^10.13.1",
     "typescript": "^5.8.3",
-    "unbuild": "^3.5.0",
+    "unbuild": "^3.6.0",
     "vite": "^6.3.5",
-    "vitest": "^3.2.3"
+    "vitest": "^3.2.4"
   },
   "publishConfig": {
     "access": "public",
