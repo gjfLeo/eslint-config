@@ -10,8 +10,8 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
         overrides: {
           "antfu/if-newline": "off",
           "curly": ["warn", "multi-line", "consistent"],
-          "style/member-delimiter-style": ["error", {}],
-          "style/quotes": ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+          "style/member-delimiter-style": "warn",
+          "style/quotes": ["warn", "double", { avoidEscape: true, allowTemplateLiterals: "avoidEscape" }],
         },
       },
 
