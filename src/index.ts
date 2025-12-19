@@ -22,6 +22,7 @@ export default function gjfleo(
         overrides: {
           "no-console": ["warn", { allow: ["info", "warn", "error"] }],
           "no-irregular-whitespace": ["warn", { skipStrings: true, skipTemplates: true }],
+          "node/prefer-global/process": ["warn", "always"],
           "antfu/no-top-level-await": "off",
         },
       },
