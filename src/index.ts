@@ -26,6 +26,11 @@ export default function gjfleo(
           "antfu/no-top-level-await": "off",
         },
       },
+      typescript: {
+        overrides: {
+          "node/prefer-global/process": ["warn", "always"],
+        },
+      },
 
       vue: {
         overrides: {
