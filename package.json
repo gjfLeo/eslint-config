@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.1.2",
   "description": "GjfLeo's ESLint config.",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "GjfLeo <gjfLeo@yeah.net>",
   "license": "MIT",
   "homepage": "https://github.com/gjfleo/eslint-config#readme",
   "repository": {
@@ -37,9 +37,8 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": ">=5.0.0",
-    "eslint": ">=9.5.0",
-    "eslint-plugin-format": ">=1.0.0"
+    "@antfu/eslint-config": ">=6.7.0",
+    "eslint": ">=9.5.0"
   },
   "dependencies": {
     "local-pkg": "^1.1.1"

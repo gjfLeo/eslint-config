@@ -1,7 +1,10 @@
 import antfu from "@antfu/eslint-config";
 import { isPackageExists } from "local-pkg";
 
-export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
+export default function gjfleo(
+  config: Parameters<typeof antfu>[0],
+  ...userConfigs: Parameters<typeof antfu>[1][]
+): ReturnType<typeof antfu> {
   return antfu(
     {
       stylistic: {
@@ -17,15 +20,9 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
 
       javascript: {
         overrides: {
-          "no-console": ["warn", { allow: ["warn", "error"] }],
+          "no-console": ["warn", { allow: ["info", "warn", "error"] }],
           "no-irregular-whitespace": ["warn", { skipStrings: true, skipTemplates: true }],
-          "node/prefer-global/process": ["warn", "always"],
           "antfu/no-top-level-await": "off",
-        },
-      },
-      typescript: {
-        overrides: {
-          "node/prefer-global/process": ["warn", "always"],
         },
       },
 
@@ -45,6 +42,8 @@ export default function gjfleo(...userConfigs: Parameters<typeof antfu>[1][]): R
         html: true,
         markdown: true,
       },
+
+      ...config,
     },
 
     {
