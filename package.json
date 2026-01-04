@@ -38,7 +38,8 @@
   },
   "peerDependencies": {
     "@antfu/eslint-config": ">=6.7.0",
-    "eslint": ">=9.5.0"
+    "eslint": ">=9.5.0",
+    "eslint-plugin-format": ">=1.1.0"
   },
   "dependencies": {
     "local-pkg": "^1.1.1"
