@@ -2,7 +2,7 @@ import antfu from "@antfu/eslint-config";
 import { isPackageExists } from "local-pkg";
 
 export default function gjfleo(
-  config: Parameters<typeof antfu>[0],
+  config: Parameters<typeof antfu>[0] = {},
   ...userConfigs: Parameters<typeof antfu>[1][]
 ): ReturnType<typeof antfu> {
   return antfu(
