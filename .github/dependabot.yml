@@ -10,12 +10,15 @@ updates:
     schedule:
       interval: weekly
       day: friday
+    groups:
+      minor-version-updates:
+        applies-to: version-updates
+        update-types: [minor, patch]
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
       day: friday
-groups:
-  version-updates:
-    applies-to: version-updates
-    update-types: [minor, patch]
+    groups:
+      all:
+        applies-to: version-updates
