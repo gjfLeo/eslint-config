@@ -8,8 +8,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     groups:
       minor-version-updates:
         applies-to: version-updates
@@ -17,8 +16,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     groups:
       all:
         applies-to: version-updates
