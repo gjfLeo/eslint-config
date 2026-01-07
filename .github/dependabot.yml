@@ -18,6 +18,6 @@ updates:
     schedule:
       interval: daily
     groups:
-      all:
+      all-version-updates:
         applies-to: version-updates
         update-types: [major, minor, patch]
