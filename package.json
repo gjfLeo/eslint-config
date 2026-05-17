@@ -50,7 +50,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@gjfleo/eslint-config": "workspace:*",
     "@types/node": "^24.10.4",
-    "bumpp": "^10.3.2",
+    "bumpp": "^11.1.0",
     "esno": "^4.8.0",
     "pnpm": "^11.1.0",
     "typescript": "^5.9.3",
