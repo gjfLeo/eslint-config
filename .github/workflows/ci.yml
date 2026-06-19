@@ -13,10 +13,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v5
+        uses: pnpm/action-setup@v6
 
       - name: Set node
         uses: actions/setup-node@v6
@@ -41,10 +41,10 @@ jobs:
   typecheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v5
+        uses: pnpm/action-setup@v6
 
       - name: Set node
         uses: actions/setup-node@v6
@@ -70,10 +70,10 @@ jobs:
   #     fail-fast: false
 
   #   steps:
-  #     - uses: actions/checkout@v6
+  #     - uses: actions/checkout@v7
 
   #     - name: Install pnpm
-  #       uses: pnpm/action-setup@v5
+  #       uses: pnpm/action-setup@v6
 
   #     - name: Set node ${{ matrix.node }}
   #       uses: actions/setup-node@v6
