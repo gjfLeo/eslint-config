@@ -10,3 +10,5 @@ packages:
 onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks
+allowBuilds:
+  esbuild: true
