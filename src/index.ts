@@ -53,7 +53,7 @@ export default function gjfleo(
     },
 
     {
-      files: [".vscode/settings.json", ".vscode/extensions.json", "bun.lock"],
+      files: [".vscode/settings.json", ".vscode/extensions.json"],
       rules: {
         "jsonc/comma-dangle": ["warn", "always-multiline"],
       },
