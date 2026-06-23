@@ -1,15 +1,20 @@
-import antfu from "@antfu/eslint-config";
+import type { StylisticConfig } from "@antfu/eslint-config";
+import antfu, { jsonc } from "@antfu/eslint-config";
 import { isPackageExists } from "local-pkg";
 
 export default function gjfleo(
   config: Parameters<typeof antfu>[0] = {},
   ...userConfigs: Parameters<typeof antfu>[1][]
 ): ReturnType<typeof antfu> {
+  const stylisticConfig: StylisticConfig = {
+    quotes: "double",
+    semi: true,
+  };
+
   return antfu(
     {
       stylistic: {
-        quotes: "double",
-        semi: true,
+        ...stylisticConfig,
         overrides: {
           "antfu/if-newline": "off",
           "curly": ["warn", "multi-line", "consistent"],
@@ -58,6 +63,13 @@ export default function gjfleo(
         "jsonc/comma-dangle": ["warn", "always-multiline"],
       },
     },
+    jsonc({
+      files: ["bun.lock"],
+      overrides: {
+        "jsonc/comma-dangle": ["warn", "always-multiline"],
+      },
+      stylistic: stylisticConfig,
+    }),
 
     ...userConfigs,
   );
